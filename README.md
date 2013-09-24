@@ -1,0 +1,2 @@
+hystrix-jersey-proxy-connector
+==============================
