@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Welcome to the site!</h1>
+    <p>Here are the latest messages:</p>
+    {{#each names}}
+      <ul>
+        <li>
+          <h2>Messages from {{this}}</h2>
+          {{#latestmessages this}}
+            {{> messages this}}
+          {{/latestmessages}}
+        </li>
+      </ul>
+    {{/each}}
+  </body>
+</html>
